@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="taxes.html">Tax table</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="paragraph.html">Simple paragraph</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Information</legend>
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required maxlength="20">
+            </div>
+            <div>
+                <label>Date of birth</label>
+                <input type="date" name="dateOfBirth">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Skills</legend>
+            <div>
+                <label for="programming">Programming</label>
+                <select name="programming">
+                    <option value="csharp">CSharp</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="typescript">Typescript</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">Language</label>
+                <select name="language">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="portuguese">Portuguese</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit">Send application</button>
+    </form>
+
+</body>
+
+</html>
